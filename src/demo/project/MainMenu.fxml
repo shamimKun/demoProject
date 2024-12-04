@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.project.MainMenuController">
+   <top>
+      <Pane prefHeight="31.0" prefWidth="600.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menuBar" layoutX="-7.0" layoutY="2.0" prefHeight="25.0" prefWidth="607.0">
+               <menus>
+                  <Menu fx:id="homeMenu" mnemonicParsing="false" onAction="#homeMenuHandler" onMenuValidation="#homeMenuHandler" text="Home">
+                     <items>
+                        <MenuItem fx:id="returnHome" mnemonicParsing="false" onAction="#returnHomeMenuHandler" onMenuValidation="#homeMenuHandler" text="Return To Home" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="activitiesMenu" mnemonicParsing="false" onAction="#activitiesMenuHandler" text="Activites">
+                     <items>
+                        <MenuItem fx:id="walkingActivityMenu" mnemonicParsing="false" onAction="#walkingHandler" onMenuValidation="#activitiesMenuHandler" text="Walking" />
+                        <MenuItem fx:id="runningActivityMenu" mnemonicParsing="false" onAction="#runningHandler" onMenuValidation="#activitiesMenuHandler" text="Running" />
+                        <MenuItem fx:id="swimmingActivityMenu" mnemonicParsing="false" onAction="#swimmingHandler" onMenuValidation="#activitiesMenuHandler" text="Swiiming" />
+                        <MenuItem fx:id="lightExcerciseMenuHandler" mnemonicParsing="false" onAction="#lightExerciseHandler" onMenuValidation="#activitiesMenuHandler" text="Light Exercise" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="foodMEnu" mnemonicParsing="false" onAction="#foodMenuHandler" text="Food">
+                     <items>
+                        <MenuItem fx:id="foodintake" mnemonicParsing="false" onAction="#foodIntakeHandler" onMenuValidation="#foodMenuHandler" text="Add Food Intake" />
+                        <MenuItem fx:id="addNewFood" mnemonicParsing="false" onAction="#addnewFoodHandler" onMenuValidation="#foodMenuHandler" text="Add New Food" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="profileMenu" mnemonicParsing="false" onAction="#profileMenuHandler" text="Profile">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="healthIndexMenu" mnemonicParsing="false" onAction="#healthIndexMenuHandler" text="Health Index">
+                     <items>
+                        <MenuItem fx:id="bmiMenu" mnemonicParsing="false" onAction="#bmiMenuHandler" onMenuValidation="#healthIndexMenuHandler" text="BMI" />
+                        <MenuItem fx:id="bmrMenu" mnemonicParsing="false" onAction="#bmrMenuHandler" onMenuValidation="#healthIndexMenuHandler" text="BMR" />
+                        <MenuItem fx:id="idealWeightMenu" mnemonicParsing="false" onAction="#idealWeightMenuHandler" onMenuValidation="#healthIndexMenuHandler" text="Idel Weight" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="helthRecordMenu" mnemonicParsing="false" onAction="#healthRecordHandler" text="Health Record">
+                     <items>
+                        <MenuItem fx:id="addSugermenu" mnemonicParsing="false" onAction="#addSugerHandler" onMenuValidation="#healthRecordHandler" text="Add Blood Suger" />
+                        <MenuItem fx:id="addBloodPressureMenu" mnemonicParsing="false" onAction="#addBloodPresureHandler" onMenuValidation="#healthRecordHandler" text="Add Blood Pressure" />
+                        <MenuItem fx:id="bodyFatMenu" mnemonicParsing="false" onAction="#bodyFatHandler" onMenuValidation="#healthIndexMenuHandler" text="Body Fat" />
+                        <MenuItem fx:id="showSugerRecordMenu" mnemonicParsing="false" onAction="#showSugerRecordHandler" onMenuValidation="#healthRecordHandler" text="Show Blood Suger Records" />
+                        <MenuItem fx:id="showBloodPressureRecordMenu" mnemonicParsing="false" onAction="#showBloodPressureRecordHandler" onMenuValidation="#healthRecordHandler" text="Show Blood Pressure Records" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="13.0" prefWidth="600.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Pane prefHeight="370.0" prefWidth="16.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="370.0" prefWidth="11.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

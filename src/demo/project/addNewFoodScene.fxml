@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="demo.project.AddNewFoodSceneController">
+   <children>
+      <Label fx:id="label1" layoutX="123.0" layoutY="97.0" prefHeight="35.0" prefWidth="158.0" text="Add New Item Name" />
+      <TextField fx:id="foodInputTextArea" layoutX="123.0" layoutY="125.0" onAction="#foodInputHandler" prefHeight="35.0" prefWidth="167.0" />
+      <Label fx:id="label2" layoutX="122.0" layoutY="172.0" prefHeight="35.0" prefWidth="158.0" text="Add Calory Per Serving" />
+      <TextField fx:id="caloryInputTextField" layoutX="122.0" layoutY="200.0" onAction="#caloryInputHandler" prefHeight="35.0" prefWidth="167.0" />
+      <Button fx:id="saveButton" layoutX="149.0" layoutY="280.0" mnemonicParsing="false" onAction="#saveButtonHandler" text="Save" />
+   </children>
+</AnchorPane>

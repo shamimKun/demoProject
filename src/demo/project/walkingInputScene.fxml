@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="267.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.project.WalkingInputSceneController">
+   <children>
+      <Label fx:id="walkingLabel" layoutX="34.0" layoutY="98.0" text="Input Your Walking Activity" />
+      <TextField fx:id="walkingInputTextField" layoutX="32.0" layoutY="121.0" onAction="#walkingInputTextFieldHandler" prefHeight="17.0" prefWidth="121.0" />
+      <Button fx:id="saveAndExistButton" layoutX="34.0" layoutY="209.0" mnemonicParsing="false" onAction="#saveAndExistButtonHandler" text="Save And Exit" />
+   </children>
+</AnchorPane>
